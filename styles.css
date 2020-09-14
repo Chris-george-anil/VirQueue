@@ -58,6 +58,9 @@ body {
 .form-signin .form-control:focus {
   z-index: 2;
 }
+.formbutton{
+  margin: 20px;
+}
 .bg{
   background-image: url("/images/coverPic.png");
   height: 100%;
