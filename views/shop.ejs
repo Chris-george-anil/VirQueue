@@ -1,0 +1,17 @@
+<%- include('partials/header') %>
+<div class="main title">
+  <h1>Welcome !</h1>
+  <h4>Enter all the necessary details in the given form. Your shop will be enlisted in the search results</h4>
+</div>
+<div class="">
+  <form action="/shop" method="post" class="form-signin">
+      <h1 class="h3 mb-3 font-weight-normal" id="shopform">Shop Details</h1>
+      <input type="text"  name="name" class="form-control middle" placeholder="Name" required >
+      <input type="text"  name="Loc" class="form-control bottom" placeholder="Location" required>
+      <input type="number"  name="slots" class="form-control bottom" placeholder="Slots" required>
+      <div class="">
+          <button type="submit" name="button" class="btn btn-dark formbutton">Submit</button>
+      </div>
+      </form>
+
+</div>
