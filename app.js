@@ -24,7 +24,14 @@ const UserSchema = new mongoose.Schema({
   Password: String,
 });
 
+const ShopSchema=new mongoose.Schema({
+  Name: String,
+  slots: Number,
+  Location: String,
+});
+
 const User = new mongoose.model("User", UserSchema);
+const Shop = new mongoose.model("Shop",ShopSchema);
 
 const app=express();
 app.set('view engine','ejs');
@@ -48,6 +55,12 @@ app.get("/signup",function(req,res){
 app.get("/login",function(req,res){
   res.render("login");
 });
+app.get("/slot",function(req,res){
+  res.render("slot");
+});
+app.get("/shop",function(req,res){
+  res.render("shop");
+})
 app.post("/login",function(req,res){
   const num=req.body.num;
   const password=req.body.password;
@@ -62,6 +75,7 @@ app.post("/login",function(req,res){
     res.render("home");
   }else{
     console.log("Wrong Password");
+    res.render("error");
   }
 });
 }else{
@@ -84,10 +98,33 @@ app.post("/signup",function(req,res){
         if(err)
         console.log(err);
         else
-        res.render("home")
+        res.render("home");
       })
     });
 });
+// app.get("/slot",function(req,res){
+//   Shop.find({"Location":req.body.Search},function(err,found){
+//     if(!err){
+//       console.log(found);
+//       res.render("slot",{items:found});
+//     }else{
+//       console.log(err);
+//     }
+//   });
+// })
+app.post("/shop",function(req,res){
+  const newShop=new Shop({
+    Name: req.body.name,
+    slots: req.body.slots,
+    Location: req.body.Loc,
+  });
+  newShop.save(function(err){
+    if(err)
+    console.log(err);
+    else
+    res.render("home");
+  })
+})
 app.listen(4500,function(err){
   if(!err){
     console.log("@4500!")
