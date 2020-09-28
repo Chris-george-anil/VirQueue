@@ -89,7 +89,7 @@ body {
   background-position: center;
 }
 .bg{
-  background-image: url("/images/coverPic.png");
+  background-image: url("../images/coverPic.png");
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
