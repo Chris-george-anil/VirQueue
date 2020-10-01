@@ -8,7 +8,10 @@ const passport = require("passport");
 const passportLocalMongoose = require("passport-local-mongoose");
 const findOrCreate=require("mongoose-findorcreate");
 const bcrypt=require("bcrypt");
+// const ejsLint = require('ejs-lint');
 const saltrounds=10;
+
+
 
 mongoose.connect('mongodb://localhost:27017/VirQue', {
   useNewUrlParser: true,
@@ -60,7 +63,13 @@ app.get("/slot",function(req,res){
 });
 app.get("/shop",function(req,res){
   res.render("shop");
-})
+});
+app.get("/slotpage",function(req,res){
+  res.render("slotpage");
+});
+
+
+
 app.post("/login",function(req,res){
   const num=req.body.num;
   const password=req.body.password;
@@ -102,16 +111,22 @@ app.post("/signup",function(req,res){
       })
     });
 });
-// app.get("/slot",function(req,res){
-//   Shop.find({"Location":req.body.Search},function(err,found){
-//     if(!err){
-//       console.log(found);
-//       res.render("slot",{items:found});
-//     }else{
-//       console.log(err);
-//     }
-//   });
-// })
+app.post("/slot",function(req,res){
+  console.log(req.body.search);
+  Shop.find({"Location":req.body.search},function(err,found){
+    if(!err){
+      if(found.length>0){
+      console.log(found);
+       res.render("slotpage",{place:req.body.search,items:found});
+     }else{
+       res.render("notfound",{place:req.body.search});
+     }
+}else{
+      console.log(err);
+      res.render("error");
+    }
+  });
+});
 app.post("/shop",function(req,res){
   const newShop=new Shop({
     Name: req.body.name,
