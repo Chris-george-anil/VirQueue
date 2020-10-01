@@ -1,0 +1,19 @@
+<%- include('partials/header'); -%>
+<div class="main title">
+  <h1>Shops At <%=place%></h1>
+</div>
+<div class="">
+  <table style="width:100%">
+    <tr>
+      <th>Shop Name</th>
+      <th>Slots</th>
+    </tr>
+    <% items.forEach(function(p){%>
+    <tr>
+      <td><%=p.Name%></td>
+    <td><%=p.slots%></td>
+    <td><button type="button" class="btn btn-dark" name="button">Book Now</button></td>
+    </tr>
+  <%});%>
+  </table>
+</div>
