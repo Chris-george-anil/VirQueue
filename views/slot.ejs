@@ -1,15 +1,18 @@
-<%- include('partials/header') %>
+<%- include('partials/header') -%>
+<body>
 <div class="main title">
   <h1>Slot Selection</h1>
-  <h4>Enter name of the shop</h4>
+  <h4>Enter Location </h4>
 <div class="slotselect">
   <div class="container h-100">
         <div class="d-flex justify-content-center h-100">
-          <div class="searchbar">
-            <input class="search_input" type="text" name="" placeholder="Search...">
-            <a href="#" name="Search" role="button" class="search_icon"><i class="fas fa-search"></i></a>
-          </div>
-        </div>
+          <form action="/slot" method="post" class="form-signin" style="padding:40px">
+              <!-- <h1 class="h3 mb-3 font-weight-normal" id="signtext">SignUp</h1> -->
+              <input type="text" name="search" class="form-control middle" placeholder="Enter Location" required >
+              <button type="submit" name="button" class="btn btn-dark formbutton" style="margin:40px">Submit</button>
+
+</form>
       </div>
 </div>
 </div>
+<%- include('partials/footer') %>
