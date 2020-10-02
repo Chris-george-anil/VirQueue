@@ -109,7 +109,7 @@ body {
     transition: width 0.4s linear;
     }
 
-    .searchbar:hover > .search_input{
+    /* .searchbar:hover > .search_input{
     padding: 0 10px;
     width: 450px;
     caret-color:black;
@@ -131,4 +131,4 @@ body {
     border-radius: 50%;
     color:white;
     text-decoration:none;
-    }
+    } */
