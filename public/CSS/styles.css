@@ -108,6 +108,9 @@ body {
     line-height: 40px;
     transition: width 0.4s linear;
     }
+.content{
+  align-items: center;
+}
 
     /* .searchbar:hover > .search_input{
     padding: 0 10px;
