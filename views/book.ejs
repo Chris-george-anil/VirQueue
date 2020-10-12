@@ -1,0 +1,26 @@
+<%- include('partials/header') -%>
+<body>
+  <div class="main title">
+    <h1>Booking Page</h1>
+    <h4>Enter the details to confirm your Booking at <%=sname%></h4>
+    <div class="slotselect">
+      <div class="container h-100">
+        <div class="d-flex justify-content-center h-100">
+          <form action="/book" method="post" class="form-signin" style="padding:40px">
+            <!-- <h1 class="h3 mb-3 font-weight-normal" id="signtext">SignUp</h1> -->
+            <input type="number" name="nom" class="form-control middle" placeholder="Enter Number of People" required>
+            <div class="d-flex justify-content-center my-4">
+            </div>
+            <select class="custom-select" id="inputGroupSelect01" name="stime">
+              <option selected>Choose...</option>
+              <%time.forEach(function(p){ %>
+                <option value="<%=p%>"> <%=p%> </option>
+            <%})%>
+            </select>
+            <button type="submit" name="button" class="btn btn-dark formbutton" style="margin:40px">Submit</button>
+            </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <%- include('partials/footer') %>

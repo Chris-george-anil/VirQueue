@@ -3,16 +3,20 @@
   <h1>Shops At <%=place%></h1>
 </div>
 <div class="">
-  <table style="width:100%">
+  <table class="table table-dark table-striped" style="width:100%">
     <tr>
       <th>Shop Name</th>
       <th>Slots</th>
+      <th>Time</th>
     </tr>
     <% items.forEach(function(p){%>
     <tr>
       <td><%=p.Name%></td>
     <td><%=p.slots%></td>
-    <td><button type="button" class="btn btn-dark" name="button">Book Now</button></td>
+    <td><%=p.Time%></td>
+    <td><form class="" action="/slotpage" method="post">
+      <button type="submit" class="btn btn-dark" name="button" value="<%=p.Name%>">Book Now</button></form>
+    </td>
     </tr>
   <%});%>
   </table>
