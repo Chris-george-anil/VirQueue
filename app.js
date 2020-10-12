@@ -10,8 +10,10 @@ const findOrCreate=require("mongoose-findorcreate");
 const bcrypt=require("bcrypt");
 // const ejsLint = require('ejs-lint');
 const saltrounds=10;
-
-
+var username;
+var aadharnum;
+var emailid;
+var phonenom;
 
 mongoose.connect('mongodb://localhost:27017/VirQue', {
   useNewUrlParser: true,
@@ -31,6 +33,7 @@ const ShopSchema=new mongoose.Schema({
   Name: String,
   slots: Number,
   Location: String,
+  Time:[String]
 });
 
 const User = new mongoose.model("User", UserSchema);
@@ -45,7 +48,6 @@ app.use(bodyparser.urlencoded({
 app.get("/",function(req,res){
   res.render("index");
 });
-
 app.get("/about",function(req,res){
   res.render("about");
 });
@@ -67,7 +69,9 @@ app.get("/shop",function(req,res){
 app.get("/slotpage",function(req,res){
   res.render("slotpage");
 });
-
+app.get("/booking",function(req,res){
+  res.render("book");
+})
 
 
 app.post("/login",function(req,res){
@@ -81,6 +85,10 @@ app.post("/login",function(req,res){
       if(found){
         bcrypt.compare(password, found.Password, function(err, result) {
     if (result === true) {
+      username=found.Name;
+      emailid=found.Email;
+      aadharnum=found.Aadhar;
+      phonenom=found.PhoneNum;
     res.render("home");
   }else{
     console.log("Wrong Password");
@@ -103,6 +111,10 @@ app.post("/signup",function(req,res){
         PhoneNum:req.body.phone,
         Password: hash,
       });
+      emailid= req.body.email,
+      username=req.body.name,
+      aadharnum=req.body.aadhar,
+      phonenom=req.body.phone,
       newUser.save(function(err){
         if(err)
         console.log(err);
@@ -113,6 +125,7 @@ app.post("/signup",function(req,res){
 });
 app.post("/slot",function(req,res){
   console.log(req.body.search);
+  t=req.body.time;
   Shop.find({"Location":req.body.search},function(err,found){
     if(!err){
       if(found.length>0){
@@ -140,6 +153,24 @@ app.post("/shop",function(req,res){
     res.render("home");
   })
 })
+
+app.post("/slotpage",function(req,res){
+  sname=req.body.button;
+Shop.find({"Name":sname},function(err,yes){
+  if(!err){
+  time=yes[0].Time;
+  res.render("book",{sname:sname,time:time});
+  }
+});
+});
+
+app.post("/book",function(req,res){
+  people=req.body.nom;
+  stime=req.body.stime;
+  console.log(req.body.stime);
+  res.render("confirm",{username:username,emailid:emailid,aadharnum:aadharnum,phonenom:phonenom,people:people,stime:stime});
+});
+
 app.listen(4500,function(err){
   if(!err){
     console.log("@4500!")
@@ -147,3 +178,4 @@ app.listen(4500,function(err){
     console.log(err);
   }
 });
+
