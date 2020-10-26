@@ -1,0 +1,21 @@
+<%- include('partials/header') -%>
+<body>
+<div style="width: 85%; margin: 0 7.5%;">
+	<div style="text-align: center; padding-left: 50px;">
+	<center>
+	<!-- <table style="text-allign : center"> -->
+		<% if (details.length > 0) { %>
+			<% details.forEach(details => {%>
+				<!-- <tr><td> -->
+        <h1><%= details.store %> Token </h1>
+          <h2><%= details.username %></h2>
+        <!-- </td><td><%= details.emailid %></td><td><%= details.aadharnum %></td><td><%= details.phonenom %></td></tr> -->
+  <h2><%= details.emailid %></h2>  <h2><%= details.aadharnum %></h2>  <h2><%= details.phonenom %></h2>
+    <%	});%>
+		<% }%>
+	<!-- </table> -->
+	</center>
+	</div>
+  <h3>Please bring an ID proof along with this token</h3>
+</div>
+</body>
