@@ -8,13 +8,18 @@ const passport = require("passport");
 const passportLocalMongoose = require("passport-local-mongoose");
 const findOrCreate=require("mongoose-findorcreate");
 const bcrypt=require("bcrypt");
+const pdf = require("html-pdf");
+const path = require("path");
 // const ejsLint = require('ejs-lint');
 const saltrounds=10;
 var username;
 var aadharnum;
 var emailid;
 var phonenom;
-
+var people;
+var stime;
+var store;
+// var details={username:username,emailid:emailid,aadharnum:aadharnum,phonenom:phonenom,people:people,stime:stime};
 mongoose.connect('mongodb://localhost:27017/VirQue', {
   useNewUrlParser: true,
   useUnifiedTopology: true
@@ -69,10 +74,41 @@ app.get("/shop",function(req,res){
 app.get("/slotpage",function(req,res){
   res.render("slotpage");
 });
-app.get("/booking",function(req,res){
+app.get("/book",function(req,res){
   res.render("book");
 })
 
+app.post("/generate", (req, res) => {
+  var details=[{username:username,emailid:emailid,aadharnum:aadharnum,phonenom:phonenom,people:people,stime:stime,store:store}];
+  console.log(details);
+	ejs.renderFile(path.join(__dirname, './views/', "report-template.ejs"),
+      {details:details}
+    , (err, data) => {
+        if (err) {
+            res.send(err);
+        } else {
+            let options = {
+                "height": "11.25in",
+                "width": "8.5in",
+                "header": {
+                    "height": "20mm",
+                },
+                "footer": {
+                    "height": "20mm",
+                },
+
+            };
+            pdf.create(data,
+               options).toFile("report.pdf", function (err, data) {
+                if (err) {
+                    res.send(err);
+                } else {
+                    res.send("File created successfully");
+                }
+            });
+        }
+    });
+})
 
 app.post("/login",function(req,res){
   const num=req.body.num;
@@ -156,6 +192,7 @@ app.post("/shop",function(req,res){
 
 app.post("/slotpage",function(req,res){
   sname=req.body.button;
+  store=sname;
 Shop.find({"Name":sname},function(err,yes){
   if(!err){
   time=yes[0].Time;
@@ -167,10 +204,13 @@ Shop.find({"Name":sname},function(err,yes){
 app.post("/book",function(req,res){
   people=req.body.nom;
   stime=req.body.stime;
-  console.log(req.body.stime);
   res.render("confirm",{username:username,emailid:emailid,aadharnum:aadharnum,phonenom:phonenom,people:people,stime:stime});
 });
 
+app.post("/confirm",function(req,res){
+  // console.log(details);
+  res.render("generate");
+})
 app.listen(4500,function(err){
   if(!err){
     console.log("@4500!")
@@ -178,4 +218,3 @@ app.listen(4500,function(err){
     console.log(err);
   }
 });
-
