@@ -3,6 +3,7 @@
     background-color: black;
     color: white;
 }
+
 .cover{
   text-align: center;
   color: white;
@@ -10,25 +11,31 @@
   top: 50%;
   vertical-align: middle;
 }
+
 h1{
   padding: 70px;
   margin-top: 100px
 }
+
 h4 ,h2{
   padding-bottom: 70px;
 }
+
 .footer{
   text-align: center;
 }
+
 .footer-padding{
   position: absolute;
   bottom: 20px;
   width: 100%;
 }
+
 .homemenu{
   text-align: center;
   margin-top: 80px;
 }
+
 .slotselect{
   height: 100%;
   width: 100%;
@@ -40,17 +47,19 @@ h4 ,h2{
 p{
 padding-top: 20px;
 }
+
 html,body{
   height: 90%;
 }
+
 body {
   display: -ms-flexbox;
   -ms-flex-align: center;
   align-items: center;
   padding-bottom: 40px;
   background-color: #f5f5f5;
-
 }
+
 .form-signin {
   width: 100%;
   max-width: 330px;
@@ -59,13 +68,16 @@ body {
   margin: auto;
   text-align: center;
 }
+
 #signtext{
   margin-top: 100px;
   padding-bottom: 5px;
 }
+
 .form-signin .checkbox {
   font-weight: 400;
 }
+
 .form-signin .form-control {
   position: relative;
   box-sizing: border-box;
@@ -73,21 +85,26 @@ body {
   padding: 10px;
   font-size: 16px;
 }
+
 .form-signin .form-control:focus {
   z-index: 2;
 }
+
 .formbutton{
   margin: 20px;
 }
+
 #shopform{
   padding-top: 20px;
   padding-bottom: 40px;
 }
+
 .jumbotron{
   text-align: center;
   padding: 120px;
   background-position: center;
 }
+
 .bg{
   background-image: url("../images/coverPic.png");
   height: 100%;
@@ -95,9 +112,11 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .erbut{
   margin: 40px;
 }
+
 .search_input{
     color: white;
     border: 0;
@@ -108,6 +127,7 @@ body {
     line-height: 40px;
     transition: width 0.4s linear;
     }
+
 .content{
   align-items: center;
 }
