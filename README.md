@@ -1,8 +1,6 @@
 # VirQueue
 VirQue – The Online Virtual Queuing System
-Chris George Anil (19BAI1085), Kaarthik E (19BAI1096), 
-Dhushyanth Mohan Kumar (19BCE1230), Clivin John Geju (19BCE1480),
-Atul Suresh Kumar (19BCE1549)
+Chris George Anil (19BAI1085), Kaarthik E (19BAI1096), Dhushyanth Mohan Kumar (19BCE1230), Clivin John Geju (19BCE1480), Atul Suresh Kumar (19BCE1549)
 Department of Science (SCOPE)
 Vellore Institute of Technology, Chennai
 chrisgeorge.anil2019@vitstudent.ac.in, kaarthik.e2019@vitstudent.ac.in, dhushyanthmohan.kumar2019@vitstudent.ac.in, clivinjohn.geju2019@vitstudent.ac.in, atulsuresh.kumar2019@vitstudent.ac.in 
