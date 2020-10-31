@@ -77,6 +77,17 @@ app.get("/slotpage",function(req,res){
 app.get("/book",function(req,res){
   res.render("book");
 })
+app.get("/report.pdf",function(req,res){
+  console.log("Reached");
+  res.sendFile("/Users/Chris george anil/Documents/Atom(webdev)/IIP/views/report.pdf",function(err){
+    if(err){
+      console.log(err);
+    }else{
+      console.log("done");
+    }
+  });
+  // ejs.renderFile(path.join(__dirname, './views/', "report.pdf"));
+});
 
 app.post("/generate", (req, res) => {
   var details=[{username:username,emailid:emailid,aadharnum:aadharnum,phonenom:phonenom,people:people,stime:stime,store:store}];
@@ -99,11 +110,11 @@ app.post("/generate", (req, res) => {
 
             };
             pdf.create(data,
-               options).toFile("report.pdf", function (err, data) {
+               options).toFile("./views/report.pdf", function (err, data) {
                 if (err) {
                     res.send(err);
                 } else {
-                    res.send("File created successfully");
+                    res.render("thanks");
                 }
             });
         }
@@ -195,9 +206,15 @@ app.post("/slotpage",function(req,res){
   store=sname;
 Shop.find({"Name":sname},function(err,yes){
   if(!err){
+    if(yes[0].slots>0){
   time=yes[0].Time;
   res.render("book",{sname:sname,time:time});
-  }
+}else {
+  res.render("error");
+}
+}else{
+  res.render("error");
+}
 });
 });
 
