@@ -40,7 +40,9 @@ Use Case diagram for Food Office Administrator
 ![FDA_usecase](https://user-images.githubusercontent.com/68503893/97809919-a6d4e700-1c89-11eb-92ec-315fd329268f.png)
 
 Use Case Diagram for the Public
-(kindly refer to 'images' file)
+
+![Public_usecase](https://user-images.githubusercontent.com/68503893/97809942-c3711f00-1c89-11eb-927a-46459b1220ca.png)
+
 
 ## Flow Diagram ##
 (kindly refer to 'images' file)
