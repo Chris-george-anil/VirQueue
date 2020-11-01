@@ -30,7 +30,9 @@ After requirements are finalized, then we can choose incremental way of software
 2.	Iterative Process Module
 This Process Is Implemented in All Individual Module, The Design and Develop is started initially and it go on repeat until Module Design and Develop Completed of one module. After that only we are choosing next Module for Design and Develop.
 3.	Block Diagram
-(kindly refer to 'images' file)
+
+![block diagram](https://user-images.githubusercontent.com/68503893/97809903-78efa280-1c89-11eb-9d58-ca2be7a9ed0e.png)
+
 
 ## Use Case Diagram ##
 Use Case diagram for Food Office Administrator
