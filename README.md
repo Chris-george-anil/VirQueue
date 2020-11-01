@@ -1,9 +1,12 @@
 # VirQueue
-VirQue – The Online Virtual Queuing System
-Chris George Anil (19BAI1085), Kaarthik E (19BAI1096), Dhushyanth Mohan Kumar (19BCE1230), Clivin John Geju (19BCE1480), Atul Suresh Kumar (19BCE1549)
-Department of Science (SCOPE)
-Vellore Institute of Technology, Chennai
-chrisgeorge.anil2019@vitstudent.ac.in, kaarthik.e2019@vitstudent.ac.in, dhushyanthmohan.kumar2019@vitstudent.ac.in, clivinjohn.geju2019@vitstudent.ac.in, atulsuresh.kumar2019@vitstudent.ac.in 
+#### VirQue – The Online Virtual Queuing System ####
+* Chris George Anil (19BAI1085) [chrisgeorge.anil2019@vitstudent.ac.in]
+* Kaarthik E (19BAI1096) [kaarthik.e2019@vitstudent.ac.in]
+* Dhushyanth Mohan Kumar (19BCE1230) [dhushyanthmohan.kumar2019@vitstudent.ac.in]
+* Clivin John Geju (19BCE1480) [clivinjohn.geju2019@vitstudent.ac.in]
+* Atul Suresh Kumar (19BCE1549) [atulsuresh.kumar2019@vitstudent.ac.in]
+- Department of Science (SCOPE)
+- Vellore Institute of Technology, Chennai
 
 # Abstract
 Waiting in line is an important issue in the context of services owing to its immense impact on operation capabilities and satisfaction of customers of organizations, especially during this ongoing pandemic. The mode of ordering queues and how long customers should wait for a service or product has laid the base for determining the most optimal queuing solution that can give a tradeoff towards minimizing operation cost incurred while optimizing queues, and also minimizing the time taken and contact by/among customers waiting to be served. As the current economies gradually transition from platform dependent to service oriented, it has become trivial to thoroughly grasp how to effectively manage waiting lines and in turn improve on the customer satisfaction in an organization. This project has examined the shortfalls of traditional and current approached to queue management, studied the types and applications of various queue management systems, and finally formulated a general approach and methodology to design and develop the virtual queue management system.
@@ -42,9 +45,9 @@ Use Case Diagram for the Public
 Virtual queuing system for ration card and ration distributions using android app is application software developed to overcome the uncertainties in ration centers. Through this program we are aiming at designing user friendly, multipurpose, efficient and attractive application software. Finally, we hope and trust that the work done by us for “Virtual queuing system for ration card and ration distributions using android app” is best and also this project is easy and safe to use.
 
 # References
-•	https://www.thehindu.com/news/cities/chennai/residents-concerned-over-crowding-at-shops-on-roadside/article31823526.ece
-•	https://www.outlookindia.com/newsscroll/workers-marching-back-home-crowds-before-ration-shops-increasing-risk-of-virus-spread-officials/1784272
-•	https://www.thehindu.com/news/national/tamil-nadu/large-crowds-in-ration-shops-to-receive-government-aid/article31253141.ece
-•	Kostecki M., “Waiting Lines as a Marketing Issue”, European Management Journal, Vol. 14, No.3, pp. 295-303, 1996
-•	http://blog.linelogic.com/blog/2011/11/17/explore-your-options/
-•	Dube L., Schmitt B.H., Leclerc F. “Intrusions into waiting lines: does the queue constitute a social system?”, Journal of Personality and Social Psychology, Vol. 63, Issue 5, pp. 806-815,199
+*	https://www.thehindu.com/news/cities/chennai/residents-concerned-over-crowding-at-shops-on-roadside/article31823526.ece
+*	https://www.outlookindia.com/newsscroll/workers-marching-back-home-crowds-before-ration-shops-increasing-risk-of-virus-spread-officials/1784272
+*	https://www.thehindu.com/news/national/tamil-nadu/large-crowds-in-ration-shops-to-receive-government-aid/article31253141.ece
+*	Kostecki M., “Waiting Lines as a Marketing Issue”, European Management Journal, Vol. 14, No.3, pp. 295-303, 1996
+*	http://blog.linelogic.com/blog/2011/11/17/explore-your-options/
+*	Dube L., Schmitt B.H., Leclerc F. “Intrusions into waiting lines: does the queue constitute a social system?”, Journal of Personality and Social Psychology, Vol. 63, Issue 5, pp. 806-815,199
