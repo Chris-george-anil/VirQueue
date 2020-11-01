@@ -5,10 +5,10 @@ Department of Science (SCOPE)
 Vellore Institute of Technology, Chennai
 chrisgeorge.anil2019@vitstudent.ac.in, kaarthik.e2019@vitstudent.ac.in, dhushyanthmohan.kumar2019@vitstudent.ac.in, clivinjohn.geju2019@vitstudent.ac.in, atulsuresh.kumar2019@vitstudent.ac.in 
 
-Abstract
+# Abstract
 Waiting in line is an important issue in the context of services owing to its immense impact on operation capabilities and satisfaction of customers of organizations, especially during this ongoing pandemic. The mode of ordering queues and how long customers should wait for a service or product has laid the base for determining the most optimal queuing solution that can give a tradeoff towards minimizing operation cost incurred while optimizing queues, and also minimizing the time taken and contact by/among customers waiting to be served. As the current economies gradually transition from platform dependent to service oriented, it has become trivial to thoroughly grasp how to effectively manage waiting lines and in turn improve on the customer satisfaction in an organization. This project has examined the shortfalls of traditional and current approached to queue management, studied the types and applications of various queue management systems, and finally formulated a general approach and methodology to design and develop the virtual queue management system.
 
-Introduction
+# Introduction
 Distribution of Ration card and ration items to public is the duty of government, which need to be done in proper way mainly for below poverty level (BPL) people it is must essential to properly distribute ration cards and after that issue ration items. Ration card is also used for recognizing the people of the city or state like a voter card it is also very essential for those who are not had voter card they at least had ration card for their identification. Basically, ration card is distributed by the food authorization office which is related to area wise.
 Objectives
 The objective of the project is to design a website which would provide the following facilities:
@@ -19,7 +19,8 @@ The objective of the project is to design a website which would provide the foll
 5.	This system generates the virtual queue for the ration item distribution according to the requests.
 6.	Transition of manual to automated system.
 7.	By using this system, we can save the public time by reducing waiting time for ration card and ration item distributions.
-Methodology
+
+# Methodology
 During Requirement Collection and Analysis Phase of the Project/Software Development until we finalize the requirements, we cannot start the actual development of the project. This is done by the model Prototyping Process Module.
 1.	Incremental Process Module
 After requirements are finalized, then we can choose incremental way of software model to develop the Project/Software, since we are not able to build all modules of software at once. Therefore, we choose incremental process module for software development.
@@ -28,18 +29,19 @@ This Process Is Implemented in All Individual Module, The Design and Develop is 
 3.	Block Diagram
 (kindly refer to 'images' file)
 
-Use Case Diagram
+# Use Case Diagram
 Use Case diagram for Food Office Administrator
 (kindly refer to 'images' file) 
 Use Case Diagram for the Public
 (kindly refer to 'images' file)
 
-Flow Diagram
+# Flow Diagram
 (kindly refer to 'images' file)
 
-Conclusion
+# Conclusion
 Virtual queuing system for ration card and ration distributions using android app is application software developed to overcome the uncertainties in ration centers. Through this program we are aiming at designing user friendly, multipurpose, efficient and attractive application software. Finally, we hope and trust that the work done by us for “Virtual queuing system for ration card and ration distributions using android app” is best and also this project is easy and safe to use.
-References
+
+# References
 •	https://www.thehindu.com/news/cities/chennai/residents-concerned-over-crowding-at-shops-on-roadside/article31823526.ece
 •	https://www.outlookindia.com/newsscroll/workers-marching-back-home-crowds-before-ration-shops-increasing-risk-of-virus-spread-officials/1784272
 •	https://www.thehindu.com/news/national/tamil-nadu/large-crowds-in-ration-shops-to-receive-government-aid/article31253141.ece
