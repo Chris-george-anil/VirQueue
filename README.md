@@ -45,7 +45,9 @@ Use Case Diagram for the Public
 
 
 ## Flow Diagram ##
-(kindly refer to 'images' file)
+
+![Flow](https://user-images.githubusercontent.com/68503893/97809956-dbe13980-1c89-11eb-993c-4da10c82a62a.jpeg)
+
 
 ## Conclusion ##
 Virtual queuing system for ration card and ration distributions using android app is application software developed to overcome the uncertainties in ration centers. Through this program we are aiming at designing user friendly, multipurpose, efficient and attractive application software. Finally, we hope and trust that the work done by us for “Virtual queuing system for ration card and ration distributions using android app” is best and also this project is easy and safe to use.
