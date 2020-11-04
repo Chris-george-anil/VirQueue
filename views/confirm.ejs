@@ -1,23 +1,36 @@
 <%- include('partials/header') -%>
-<div class="main title">
-  <h1>Confirm Booking</h1>
-  <h4>Please check the details given below and Click confirm</h4>
-  </div>
-<div class="content container">
-  <div class="card">
-    <div class="card-body">
-      <h4 class="card-title">Booking Details</h4>
-      <ul>
-        <li>Name: <%=username%></li>
-        <li>Email: <%=emailid%></li>
-        <li>Phone Number: <%=phonenom%></li>
-        <li>Aadhar Number <%=aadharnum%></li>
-        <li>Number of People: <%=people%></li>
-        <li>Slot <%=stime%></li>
-      </ul>
+    <div class="main title">
+        <h1>Confirm Booking</h1>
+        <h4>Please check the details given below and Click confirm</h4>
     </div>
-    <form class="" action="/generate" method="post">
-      <button type="submit" class="btn btn-dark" name="button">Generate pdf</button>
-    </form>
-  </div>
-</div>
+    <div class="content container my-5 w-50">
+        <div class="card align-items-center">
+            <h4 class="card-header w-100" style="text-align: center;">Booking Details</h4>
+            <div class="card-body mt-3">
+                <ul>
+                    <li><b> Name:</b>
+                        <%=username%>
+                    </li>
+                    <li><b>Email:</b>
+                        <%=emailid%>
+                    </li>
+                    <li><b>Phone Number:</b>
+                        <%=phonenom%>
+                    </li>
+                    <li><b>Aadhar Number:</b>
+                        <%=aadharnum%>
+                    </li>
+                    <li><b>Number of People:</b>
+                        <%=people%>
+                    </li>
+                    <li><b>Slot</b>
+                        <%=stime%>
+                    </li>
+                </ul>
+                <form class="" action="/generate" method="post">
+                    <button type="submit" class="btn btn-dark formbutton" name="button">Generate PDF</button>
+                    <button id="backbtn" class="btn btn-dark" onclick="history.back(-1)">Back</button>
+                </form>
+            </div>
+        </div>
+    </div>
