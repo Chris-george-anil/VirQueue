@@ -5,8 +5,9 @@
 * Dhushyanth Mohan Kumar (19BCE1230) [dhushyanthmohan.kumar2019@vitstudent.ac.in]
 * Clivin John Geju (19BCE1480) [clivinjohn.geju2019@vitstudent.ac.in]
 * Atul Suresh Kumar (19BCE1549) [atulsuresh.kumar2019@vitstudent.ac.in]
-- Department of Science (SCOPE)
-- Vellore Institute of Technology, Chennai
+
+Department of Science (SCOPE)
+Vellore Institute of Technology, Chennai
 
 ## Abstract ##
 Waiting in line is an important issue in the context of services owing to its immense impact on operation capabilities and satisfaction of customers of organizations, especially during this ongoing pandemic. The mode of ordering queues and how long customers should wait for a service or product has laid the base for determining the most optimal queuing solution that can give a tradeoff towards minimizing operation cost incurred while optimizing queues, and also minimizing the time taken and contact by/among customers waiting to be served. As the current economies gradually transition from platform dependent to service oriented, it has become trivial to thoroughly grasp how to effectively manage waiting lines and in turn improve on the customer satisfaction in an organization. This project has examined the shortfalls of traditional and current approached to queue management, studied the types and applications of various queue management systems, and finally formulated a general approach and methodology to design and develop the virtual queue management system.
