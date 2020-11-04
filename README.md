@@ -6,15 +6,15 @@
 * Clivin John Geju (19BCE1480) [clivinjohn.geju2019@vitstudent.ac.in]
 * Atul Suresh Kumar (19BCE1549) [atulsuresh.kumar2019@vitstudent.ac.in]
 
-Department of Science (SCOPE)
-Vellore Institute of Technology, Chennai
+#### Department of Science (SCOPE)<br>Vellore Institute of Technology, Chennai ####
 
 ## Abstract ##
 Waiting in line is an important issue in the context of services owing to its immense impact on operation capabilities and satisfaction of customers of organizations, especially during this ongoing pandemic. The mode of ordering queues and how long customers should wait for a service or product has laid the base for determining the most optimal queuing solution that can give a tradeoff towards minimizing operation cost incurred while optimizing queues, and also minimizing the time taken and contact by/among customers waiting to be served. As the current economies gradually transition from platform dependent to service oriented, it has become trivial to thoroughly grasp how to effectively manage waiting lines and in turn improve on the customer satisfaction in an organization. This project has examined the shortfalls of traditional and current approached to queue management, studied the types and applications of various queue management systems, and finally formulated a general approach and methodology to design and develop the virtual queue management system.
 
 ## Introduction ##
 Distribution of Ration card and ration items to public is the duty of government, which need to be done in proper way mainly for below poverty level (BPL) people it is must essential to properly distribute ration cards and after that issue ration items. Ration card is also used for recognizing the people of the city or state like a voter card it is also very essential for those who are not had voter card they at least had ration card for their identification. Basically, ration card is distributed by the food authorization office which is related to area wise.
-Objectives
+
+## Objectives ##
 The objective of the project is to design a website which would provide the following facilities:
 1.	Get the notifications details of food office to the user’s phone.
 2.	Send the request to get the new ration card and get the date details regarding when to go for taking photos by virtually generating token number.
